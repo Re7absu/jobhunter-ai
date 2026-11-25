@@ -28,6 +28,32 @@ See [ARCHITECTURE.md](ARCHITECTURE.md) for the design, data model and folder str
 | **Analytics** | KPI cards and charts (per day, week, city, category; response and interview rates; match scores). A daily report shows exactly which companies you contacted. CSV and Excel export. |
 | **Automation** | A daily scheduled run with configurable frequency, cities, categories, experience levels, minimum score, daily cap, sources, and a global pause switch. |
 
+## Screenshots
+
+> Captured from the running application on a separate demo database: a sample CV labelled "Demo Candidate", one real job-discovery run (JSearch, Riyadh and Jeddah) and real AI matching. Gmail was not connected, so nothing was sent.
+
+**Overview.** Pipeline KPIs and the latest applications.
+
+![Overview dashboard](docs/screenshots/overview.png)
+
+**Job opportunities.** De-duplicated vacancies with city, category, level, match score, status and source.
+
+![Job opportunities](docs/screenshots/jobs.png)
+
+**AI job matching.** Each job is scored against the CV, with matching, missing and transferable skills and a recommendation.
+
+![AI match analysis](docs/screenshots/match-analysis.png)
+
+**Approval queue.** Drafted applications wait here; nothing is sent without explicit approval.
+
+![Approval queue](docs/screenshots/approval-queue.png)
+
+**CV and profile.** The profile is extracted from the uploaded CV, which is encrypted at rest.
+
+![CV and profile](docs/screenshots/profile.png)
+
+---
+
 ## Tech stack
 
 - **Backend:** Python, FastAPI, SQLAlchemy 2, Alembic, Pydantic, PostgreSQL (`pg8000`), APScheduler, httpx, BeautifulSoup, pypdf, python-docx, openpyxl.
