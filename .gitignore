@@ -1,0 +1,48 @@
+# ---------------------------------------------------------------- secrets & personal data
+# Real configuration (API keys, passwords, OAuth secrets) — only the *.example files are committed
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+# Uploaded CVs and other user files (encrypted, but personal)
+backend/storage/
+storage/
+# Credentials that should never be committed
+*.pem
+*.key
+client_secret*.json
+credentials*.json
+token*.json
+
+# ---------------------------------------------------------------- local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# ---------------------------------------------------------------- python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# ---------------------------------------------------------------- node / next.js
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+npm-debug.log*
+
+# ---------------------------------------------------------------- editors / OS / local tooling
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
