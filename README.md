@@ -264,4 +264,6 @@ Interactive documentation: http://localhost:8000/docs.
 
 ---
 
-*Private personal project. All rights reserved.*
+## License
+
+Released under the [MIT License](LICENSE).
